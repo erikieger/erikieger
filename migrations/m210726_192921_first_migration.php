@@ -18,6 +18,16 @@ class m210726_192921_first_migration extends Migration
             'cep' => Schema::TYPE_STRING,
             'logradouro' => Schema::TYPE_STRING,
         ]);
+
+        $this->insert('endereco', [
+            'cep' => '83320280',
+            'logradouro' => 'Rua Etiopia',
+        ]);
+
+        $this->insert('endereco', [
+            'cep' => '81650325',
+            'logradouro' => 'Avenida dos Estados',
+        ]);
     }
 
     /**
